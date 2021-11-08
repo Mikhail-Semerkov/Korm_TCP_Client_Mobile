@@ -1,4 +1,4 @@
-# Korm TCP Client Mobile by M.Semerkov
+<p align="center"> # Korm TCP Client Mobile by M.Semerkov /></p>
 
 
 <p align="center">
