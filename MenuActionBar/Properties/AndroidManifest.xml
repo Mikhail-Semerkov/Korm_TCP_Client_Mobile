@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ru.miratorg.kormclient" android:versionCode="2" android:versionName="2.1" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29" />
+	<application android:label="Korm TCP Client Mobile" android:theme="@style/MyTheme" android:icon="@mipmap/icon"></application>
+</manifest>

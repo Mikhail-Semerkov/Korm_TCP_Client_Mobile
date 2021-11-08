@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <Toolbar
+        android:id="@+id/toolbarC"
+        android:layout_width="match_parent"
+        android:layout_height="60.0dp"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="?android:attr/colorPrimary"
+        android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:scrollbars="none"
+        android:layout_marginTop="63.6dp">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="128.7dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:textSize="1px"
+                    android:text="ID записи: " />
+                <TextView
+                    android:id="@+id/addEdit_ContactId"
+                    android:layout_width="181.5dp"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:visibility="invisible"
+                    android:textSize="1px"
+                    android:hint="ID записи"
+                    android:layout_marginRight="0.0dp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Имя Фермы: " />
+                <EditText
+                    android:id="@+id/addEdit_NameFerms"
+                    style="@style/input_style"
+                    android:layout_width="206.5dp"
+                    android:layout_height="40.4dp"
+                    android:layout_below="@+id/addEdit_ContactId"
+                    android:hint="Имя Фермы"
+                    android:layout_marginRight="11.3dp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="52.0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Номер фермы: " />
+                <EditText
+                    android:id="@+id/addEdit_NumberFerms"
+                    style="@style/input_style"
+                    android:layout_width="208.4dp"
+                    android:layout_height="40.4dp"
+                    android:layout_below="@+id/addEdit_Description"
+                    android:gravity="top|left"
+                    android:hint="Номер фермы"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="52.0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Подразделение: " />
+                <EditText
+                    android:id="@+id/addEdit_Podrazdelenie"
+                    style="@style/input_style"
+                    android:layout_width="220.7dp"
+                    android:layout_height="40.4dp"
+                    android:layout_below="@+id/addEdit_NumeAPP"
+                    android:gravity="top|left"
+                    android:hint="Подразделение"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="52.0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Имя APP: " />
+                <EditText
+                    android:id="@+id/addEdit_NameAPP"
+                    style="@style/input_style"
+                    android:layout_width="217.8dp"
+                    android:layout_height="40.4dp"
+                    android:layout_below="@+id/addEdit_NumberFerms"
+                    android:gravity="top|left"
+                    android:hint="Имя APP"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="52.0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cтационарный: " />
+                <EditText
+                    android:id="@+id/addEdit_TelefonStacionar"
+                    style="@style/input_style"
+                    android:layout_width="216.7dp"
+                    android:layout_height="40.4dp"
+                    android:layout_below="@+id/addEdit_Podrazdelenie"
+                    android:gravity="top|left"
+                    android:hint="Cтационарный"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="52.0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Администратор: " />
+                <EditText
+                    android:id="@+id/addEdit_NameAdministrator"
+                    style="@style/input_style"
+                    android:layout_width="218.5dp"
+                    android:layout_height="40.4dp"
+                    android:layout_below="@+id/addEdit_Podrazdelenie"
+                    android:gravity="top|left"
+                    android:hint="Администратор"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="52.0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Администратор моб.: " />
+                <EditText
+                    android:id="@+id/addEdit_MobileAdministrator"
+                    style="@style/input_style"
+                    android:layout_width="221.5dp"
+                    android:layout_height="40.4dp"
+                    android:layout_below="@+id/addEdit_Podrazdelenie"
+                    android:gravity="top|left"
+                    android:hint="Администратор моб."
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="52.0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Руководитель: " />
+                <EditText
+                    android:id="@+id/addEdit_NameRukovoditel"
+                    style="@style/input_style"
+                    android:layout_width="220.7dp"
+                    android:layout_height="40.4dp"
+                    android:layout_below="@+id/addEdit_NumberFerms"
+                    android:gravity="top|left"
+                    android:hint="Руководитель"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Руководитель моб.: " />
+                <EditText
+                    android:id="@+id/addEdit_MobileRukovoditel"
+                    style="@style/input_style"
+                    android:layout_width="211.6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addEdit_NameFerms"
+                    android:hint="Руководитель моб." />
+            </TableRow> 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AP IP адрес: " />
+                <EditText
+                    android:id="@+id/addEdit_APIPAddres"
+                    style="@style/input_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addEdit_NameFerms"
+                    android:hint="AP IP адрес" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IP адрес 1: " />
+                <EditText
+                    android:id="@+id/addEdit_IpAddres1"
+                    style="@style/input_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addEdit_NameFerms"
+                    android:hint="IP адрес 1" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IP адрес 2: " />
+                <EditText
+                    android:id="@+id/addEdit_IpAddres2"
+                    style="@style/input_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addEdit_NameFerms"
+                    android:hint="IP адрес 2" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IP адрес 3: " />
+                <EditText
+                    android:id="@+id/addEdit_IpAddres3"
+                    style="@style/input_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addEdit_NameFerms"
+                    android:hint="IP адрес 3" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IP адрес 4: " />
+                <EditText
+                    android:id="@+id/addEdit_IpAddres4"
+                    style="@style/input_style"
+                    android:layout_width="166.2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addEdit_NameFerms"
+                    android:hint="IP адрес 4" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IP адрес 5: " />
+                <EditText
+                    android:id="@+id/addEdit_IpAddres5"
+                    style="@style/input_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addEdit_NameFerms"
+                    android:hint="IP адрес 5" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IP адрес 6: " />
+                <EditText
+                    android:id="@+id/addEdit_IpAddres6"
+                    style="@style/input_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addEdit_NameFerms"
+                    android:hint="IP адрес 6" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IP адрес 7: " />
+                <EditText
+                    android:id="@+id/addEdit_IpAddres7"
+                    style="@style/input_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addEdit_NameFerms"
+                    android:hint="IP адрес 7" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IP адрес 8: " />
+                <EditText
+                    android:id="@+id/addEdit_IpAddres8"
+                    style="@style/input_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addEdit_NameFerms"
+                    android:hint="IP адрес 8" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="52.0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Детали: " />
+                <EditText
+                    android:id="@+id/addEdit_Description"
+                    style="@style/input_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.4dp"
+                    android:layout_below="@+id/addEdit_Email"
+                    android:gravity="top|left"
+                    android:hint="Детали"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="52.0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Координаты: " />
+                <EditText
+                    android:id="@+id/addEdit_Location"
+                    style="@style/input_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.4dp"
+                    android:layout_below="@+id/addEdit_Email"
+                    android:gravity="top|left"
+                    android:hint="Координаты"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical" />
+            </TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" " />
+            <Button
+                android:id="@+id/addEdit_btnSave"
+                style="@style/button_style"
+                android:text=" Сохранить "
+                android:layout_width="252.7dp" />
+
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

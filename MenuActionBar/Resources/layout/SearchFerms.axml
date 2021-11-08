@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+        <Toolbar
+        android:id="@+id/toolbarC"
+        android:layout_width="match_parent"
+        android:layout_height="60.0dp"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="?android:attr/colorPrimary"
+        android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar" />
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:paddingTop="60dp"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            
+            android:layout_width="fill_parent"
+            android:layout_height="41.8dp">
+
+            <EditText
+                android:id="@+id/contactList_txtSearch"
+                android:background="@drawable/EditTextStyle"
+                android:layout_width="379.3dp"
+                android:layout_height="40.4dp"
+                android:hint="Поиск"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8.4dp"
+                android:layout_marginBottom="11.6dp" />
+
+        </TableRow>
+    </TableLayout>
+    <ListView
+        android:id="@+id/contactList_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout"
+        android:layout_marginTop="0dp"
+        android:clickable="true"
+        android:divider="@android:color/black"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" />
+</RelativeLayout>

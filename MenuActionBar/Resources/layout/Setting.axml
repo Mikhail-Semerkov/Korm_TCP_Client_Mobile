@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <Toolbar
+        android:id="@+id/toolbarC"
+        android:layout_width="match_parent"
+        android:layout_height="60.0dp"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="?android:attr/colorPrimary"
+        android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65.0dp"
+        android:layout_marginLeft="5.0dp"
+        android:layout_marginRight="5.0dp"
+        android:layout_marginBottom="5.0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Формат проброса:  "
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/FormatProbrosVes"
+            android:layout_width="54.5dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:background="@drawable/EditTextStyle"
+            android:foregroundGravity="center"
+            android:layout_marginTop="2.9dp"
+            android:layout_marginBottom="5.0dp"
+            android:layout_marginRight="72.3dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Порт:  "
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/FormatPort"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:background="@drawable/EditTextStyle"
+            android:foregroundGravity="center"
+            android:layout_marginTop="2.9dp"
+            android:layout_marginBottom="5.0dp"
+            android:layout_marginRight="0.0dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65.0dp"
+        android:layout_marginLeft="5.0dp"
+        android:layout_marginRight="5.0dp"
+        android:layout_marginBottom="5.0dp">
+        <Button
+            android:id="@+id/SaveSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить"
+            android:layout_marginTop="40.0dp"/>
+
+    </LinearLayout>
+
+ 
+
+
+
+
+
+
+
+
+</RelativeLayout>

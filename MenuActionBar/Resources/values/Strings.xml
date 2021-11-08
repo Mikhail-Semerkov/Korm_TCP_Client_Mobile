@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="ApplicationName">Настройки</string>
+  <string name="TituloCreditos">Информация</string>
+
+  <string name="dop_setting">Choose a Language</string>  
+             <string-array name="dop_setting_array">  
+                   <item>Не выбрано</item>  
+                   <item>Синхронизация времени</item>  
+                   <item>Калибровки терминала</item>
+				   <item>Очистка кормового листа</item>
+
+				 
+             </string-array>  
+</resources>

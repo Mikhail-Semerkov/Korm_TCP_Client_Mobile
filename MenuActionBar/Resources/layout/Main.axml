@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60.0dp"
+        android:title=" "
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="?android:attr/colorPrimary"
+        android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
+        android:layout_alignParentLeft="false"
+        android:layout_marginBottom="0.0dp">
+
+
+        <Button
+                android:id="@+id/vpnButton"
+                android:layout_width="40.0dp"
+                android:layout_height="33.1dp"
+                android:background="@drawable/button_shape"
+                android:text="VPN"
+                android:stateListAnimator="@null"
+                android:textSize="11dp"
+                android:layout_marginRight="0.0dp"
+                android:layout_marginBottom="2.2dp"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="left"/>
+
+        <ImageView
+            android:layout_width="200dip"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_miratorg"
+            android:layout_gravity="center"
+            android:layout_marginRight="0.0dp"
+            android:layout_marginLeft="0.0dp"
+            android:layout_marginBottom="10.0dp" />
+    </Toolbar>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0.0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="11dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addEdit_ContactId"
+            android:text="Korm TCP Client ver 2.7"
+            android:layout_marginTop="44.8dp" />
+
+        <TextView
+            android:id="@+id/connectionStatus"
+            android:layout_width="288.7dp"
+            android:layout_height="wrap_content"
+            android:text="Нет соединения"
+            android:background="@drawable/cell_shape"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:layout_marginTop="6.9dp"
+            android:layout_marginBottom="1.8dp" />
+        <TextView
+            android:id="@+id/TimePingLabel"
+            android:layout_width="wrap_content"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Проверка задержки соединения"
+            android:layout_marginLeft="0.0dp"
+            android:layout_marginTop="5.8dp"
+            android:layout_marginRight="0.0dp"
+            android:layout_marginBottom="4.3dp" />
+
+        <LinearLayout
+            android:layout_width="372.0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0.0dp"
+            android:layout_marginBottom="0.0dp"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/ipText"
+                android:layout_width="173.1dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:gravity="center"
+                android:background="@drawable/cell_shape_ip"
+                android:ems="10"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:textColor="#ea2030"
+                android:layout_marginTop="0.0dp"
+                android:layout_marginRight="0.0dp"
+                android:layout_marginLeft="0.0dp"
+                android:layout_marginBottom="0.0dp"
+                android:hint="IP адрес"
+                android:maxLines="1"
+                android:autoSizeTextType="none"
+                android:autoText="false"
+                android:inputType="none"
+                android:layout_gravity="center"/>
+            <CheckBox
+                android:text="Pinger"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/pingCheckBox"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginRight="9.5dp"
+                android:layout_marginLeft="2.2dp"
+                android:layout_marginTop="1.8dp"
+                android:layout_gravity="center"/>
+
+
+            <Button
+                android:id="@+id/connectButton"
+                android:layout_width="126.5dp"
+                android:layout_height="33.1dp"
+                android:background="@drawable/button_shape"
+                android:text="Подключиться"
+                android:stateListAnimator="@null"
+                android:textSize="11dp"
+                android:layout_marginRight="0.0dp"
+                android:layout_marginBottom="2.2dp"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/portLabel"
+            android:layout_width="121.5dp"
+            android:gravity="center"
+            android:textSize="8dp"
+            android:textStyle="bold"
+            android:layout_height="10.9dp"
+            android:layout_marginLeft="257.9dp"
+            android:layout_marginTop="0.0dp"
+            android:hint="Порт по умолчанию:"
+            android:layout_marginRight="0.0dp"
+            android:layout_marginBottom="0.0dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addEdit_ContactId"
+            android:layout_marginTop="0.0dp"
+            android:hint="Приём данных:"/>
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="369.1dp"
+            android:layout_height="296.4dp"
+            android:textSize="12dp"
+            android:background="@drawable/input_shape"
+            android:layout_marginLeft="0.0dp"
+            android:layout_marginRight="0.0dp"
+            android:layout_marginTop="0.0dp"
+            android:scrollbars = "vertical"
+            android:editable="false"
+            android:scrollbarSize="12px"
+            android:gravity="start"
+            android:layout_marginBottom="0dp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="0.0dp">
+
+            <Button
+                android:id="@+id/clearButton"
+                android:text="Очистить"
+                android:background="@drawable/button_shape"
+                android:stateListAnimator="@null"
+                android:textSize="11dp"
+                android:layout_width="367.6dp"
+                android:layout_height="31.3dp"
+                android:layout_marginLeft="0.0dp"
+                android:layout_marginBottom="5.8dp"
+                android:layout_marginRight="0.0dp"
+                android:layout_marginTop="4.8dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/LabelActiv"
+            android:layout_width="match_parent"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Выбор дополнительных настроек:"
+            android:gravity="center"
+            android:layout_marginTop="2.9dp"
+            android:layout_marginBottom="5.2dp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/cell_shape_setting"
+            android:id="@+id/spinner_dop_setting"
+            android:prompt="@string/dop_setting"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_areas" 
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:gravity="center"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="0.0dp"
+            android:layout_marginTop="0.0dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <Button
+                android:id="@+id/probrosButton"
+                android:layout_width="373.5dp"
+                android:layout_height="44.0dp"
+                android:background="@drawable/button_shape"
+                android:stateListAnimator="@null"
+                android:text="Проброс веса"
+                android:textSize="14dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginBottom="0.0dp"
+                android:layout_marginTop="147.0dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95.0dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="0.0dp"
+        android:layout_marginTop="300.3dp"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <ProgressBar
+            android:layout_width="76.7dp"
+            android:layout_height="54.9dp"
+            android:id="@+id/connectedProgressBar"
+            android:layout_marginBottom="2.2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Соединение"
+            android:textSize="25px"
+            android:id="@+id/connectedProgressBarLabel"
+            android:layout_marginBottom="2.2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3.1dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="0.0dp"
+        android:layout_marginTop="590.0dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/proverkaversiirButton"
+            android:text="Проверка версии терминала"
+            android:background="@drawable/button_shape_setting"
+            android:stateListAnimator="@null"
+            android:textSize="11dp"
+            android:layout_width="320.0dp"
+            android:layout_height="45.0dp"
+            android:layout_marginLeft="0.0dp"
+            android:layout_marginBottom="6.2dp"
+            android:visibility="visible"
+            android:layout_marginTop="3.7dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:id="@+id/SynchVremyaLabel"
+            android:layout_height="wrap_content"
+            android:text="Синхронизация времени:"
+            android:gravity="center"
+            android:layout_marginBottom="2.9dp" />
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginBottom="0.0dp"
+         android:layout_marginTop="0.0dp"
+         android:layout_gravity="center"
+         android:gravity="center">
+             <Button
+                 android:id="@+id/Digi_Star_Button"
+                 android:text="Digi-Star"
+                 android:background="@drawable/button_shape_setting"
+                 android:stateListAnimator="@null"
+                 android:textSize="11dp"
+                 android:layout_width="150.0dp"
+                 android:layout_height="35.0dp"
+                 android:layout_marginLeft="0.0dp"
+                 android:layout_marginBottom="0.0dp"
+                 android:visibility="visible"
+                 android:layout_marginRight="19.2dp"
+                 android:layout_gravity="center"
+                 android:gravity="center"/>
+             <Button
+                 android:id="@+id/Kuhn_Button"
+                 android:text="Kuhn/TMR"
+                 android:background="@drawable/button_shape_setting"
+                 android:stateListAnimator="@null"
+                 android:textSize="11dp"
+                 android:layout_width="150.0dp"
+                 android:layout_height="35.0dp"
+                 android:layout_marginLeft="0.0dp"
+                 android:layout_marginBottom="0.0dp"
+                 android:visibility="visible"
+                 android:layout_gravity="center"
+                 android:gravity="center"/>
+      </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="0.0dp"
+    android:layout_marginTop="590.0dp"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+        <Button
+            android:id="@+id/KalibrovkaButton"
+            android:text="Проверка калибровки"
+            android:background="@drawable/button_shape_setting"
+            android:stateListAnimator="@null"
+            android:textSize="11dp"
+            android:layout_width="320.0dp"
+            android:layout_height="45.0dp"
+            android:layout_marginLeft="0.0dp"
+            android:layout_marginBottom="6.9dp"
+            android:layout_marginTop="3.7dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:id="@+id/KalibrovkaLabel"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addEdit_ContactId"
+            android:layout_marginTop="0.0dp"
+            android:text="Калибровка терминала:"
+            android:layout_marginBottom="1.2dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginBottom="0.0dp"
+         android:layout_marginTop="0.0dp"
+         android:layout_gravity="center"
+         android:gravity="center">
+            <EditText
+                android:id="@+id/KalibrovkaEditText"
+                android:background="@drawable/input_shape"
+                android:textSize="11dp"
+                android:hint="От 1 до 99999"
+                android:layout_width="146.5dp"
+                android:layout_height="35.0dp"
+                android:layout_marginLeft="0.0dp"
+                android:layout_marginBottom="0.0dp"
+                android:visibility="visible"
+                android:layout_marginRight="14.2dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <Button
+                android:id="@+id/Kalibrovka_Info_Button"
+                android:text="?"
+                android:background="@drawable/button_shape_setting"
+                android:stateListAnimator="@null"
+                android:textSize="11dp"
+                android:layout_width="35.0dp"
+                android:layout_height="35.0dp"
+                android:layout_marginLeft="0.0dp"
+                android:layout_marginBottom="0.0dp"
+                android:visibility="visible"
+                android:layout_marginRight="13.4dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <Button
+                android:id="@+id/Kalibrovka_Send_Button"
+                android:text="Применить"
+                android:background="@drawable/button_shape_setting"
+                android:stateListAnimator="@null"
+                android:textSize="11dp"
+                android:layout_width="110.1dp"
+                android:layout_height="35.0dp"
+                android:layout_marginLeft="0.0dp"
+                android:layout_marginBottom="0.0dp"
+                android:visibility="visible"
+                android:layout_marginRight="1.5dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+      </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="0.0dp"
+        android:layout_marginTop="590.0dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+
+        <Button
+            android:id="@+id/OchistkaKprmovogo_Button"
+            android:text="Очистка кормового"
+            android:background="@drawable/button_shape_setting"
+            android:stateListAnimator="@null"
+            android:textSize="11dp"
+            android:layout_width="320.0dp"
+            android:layout_height="45.0dp"
+            android:layout_marginLeft="0.0dp"
+            android:layout_marginBottom="6.9dp"
+            android:layout_marginTop="3.7dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:padding="3dp"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="Ферма: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_NameFerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Ферма"
+                android:textColor="#0000dd"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="Номер фермы: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_NumberFerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Номер фермы"
+                android:textColor="#0000dd"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="Подразделение: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_Podrazdelenie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Подразделение"
+                android:textColor="#0000dd"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="Имя APP: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_NameAPP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Имя APP"
+                android:textColor="#0000dd"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="Стационарный: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_TelefonStacionar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Стационарный"
+                android:textColor="#0000dd"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="Администратор: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_NameAdministrator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Администратор"
+                android:textColor="#0000dd"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="Администратор моб.: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_MobileAdministrator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Администратор моб."
+                android:textColor="#0000dd"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="Руководитель: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_NameRukovoditel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Руководитель"
+                android:textColor="#0000dd"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="Руководитель моб.: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_MobileRukovoditel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Руководитель моб."
+                android:textColor="#0000dd"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="AP IP адрес: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_APIPAddres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="AP IP адрес"
+                android:textColor="#0000dd"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="IP адрес 1: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_IpAddres1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="IP адрес 1"
+                android:textColor="#0000dd"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="IP адрес 2: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_IpAddres2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="IP адрес 2"
+                android:textColor="#0000dd"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="IP адрес 3: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_IpAddres3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="IP адрес 3"
+                android:textColor="#0000dd"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="IP адрес 4: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_IpAddres4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="IP адрес 4"
+                android:textColor="#0000dd"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="IP адрес 5: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_IpAddres5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="IP адрес 5"
+                android:textColor="#0000dd"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="IP адрес 6: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_IpAddres6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="IP адрес 6"
+                android:textColor="#0000dd"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="IP адрес 7: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_IpAddres7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="IP адрес 7"
+                android:textColor="#0000dd"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="IP адрес 8: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_IpAddres8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="IP адрес 8"
+                android:textColor="#0000dd"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="Детали: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_descriptin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+
+                android:text="Детали"
+                android:textColor="#0000dd"
+                android:textSize="15dp" 
+                android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="Координаты: "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/lr_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+
+                android:text="Координаты"
+                android:textColor="#0000dd"
+                android:textSize="15dp" 
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/lr_deleteBtn"
+        android:layout_width="50dip"
+        android:layout_height="42.2dp"
+        android:src="@drawable/delete"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+    />
+
+
+</RelativeLayout>
